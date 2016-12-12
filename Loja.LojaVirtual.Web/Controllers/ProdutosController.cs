@@ -14,7 +14,7 @@ namespace Loja.LojaVirtual.Web.Controllers
         public ActionResult Index()
         {
             _repositorio = new ProdutosRepositorio();
-            var Produtos = _repositorio.Produtos.Take(10);
+            var Produtos = _repositorio.Produtos.Take(3);
 
             return View(Produtos);
         }
